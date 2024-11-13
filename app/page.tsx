@@ -21,7 +21,7 @@ export default function Home() {
           <div className="flex flex-col w-full justify-center items-center p-10 space-y-5">
             <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">IN2120 QUIZ</h1>
             <h3 className="text-lg sm:text-2xl font-mono">Laget av Gjerry feat NotebookAI</h3>
-            <p>Jeg merget alle PDF'er fra forelesninger og matet de til NotebookAI og ba den lage relevante quiz-spørsmål fra pensum. Dere får bedømme selv hvor god jobb den har gjort. Jeg tar på ingen mulig måte ansvar for at spørsmålene eller svaralternativene er korrekt eller ikke</p>
+            <p>Jeg merget alle PDFer fra forelesninger og matet de til NotebookAI og ba den lage relevante quiz-spørsmål fra pensum. Dere får bedømme selv hvor god jobb den har gjort. Jeg tar på ingen mulig måte ansvar for at spørsmålene eller svaralternativene er korrekt eller ikke</p>
             <CustomButton text="Start quiz" onClick={handleStartQuiz} />
           </div>
         </BackgroundGradient>

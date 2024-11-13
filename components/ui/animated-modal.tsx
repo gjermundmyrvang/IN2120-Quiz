@@ -163,7 +163,6 @@ export const ModalFooter = ({
   children: ReactNode;
   className?: string;
 }) => {
-    const modalRef = useRef(null);
     const { setOpen } = useModal();
   return (
     <div
@@ -230,20 +229,22 @@ const CloseIcon = () => {
 // Add it in a separate file, I've added here for simplicity
 export const useOutsideClick = (
   ref: React.RefObject<HTMLDivElement>,
-  callback: Function
+  callback: () => void
 ) => {
   useEffect(() => {
-    const listener = (event: any) => {
-      // DO NOTHING if the element being clicked is the target element or their children
-      if (!ref.current || ref.current.contains(event.target)) {
+    const listener = (event: MouseEvent | TouchEvent) => {
+      // Hvis referansen til elementet ikke er satt, eller hvis eventen skjer inne i elementet, returner uten å kalle callback.
+      if (!ref.current || ref.current.contains(event.target as Node)) {
         return;
       }
-      callback(event);
+      callback();
     };
 
+    // Legg til event listeners for å håndtere klikk utenfor komponenten.
     document.addEventListener("mousedown", listener);
     document.addEventListener("touchstart", listener);
 
+    // Fjern event listeners når komponenten unmountes.
     return () => {
       document.removeEventListener("mousedown", listener);
       document.removeEventListener("touchstart", listener);
