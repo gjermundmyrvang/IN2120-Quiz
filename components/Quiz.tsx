@@ -27,7 +27,7 @@ export const Quiz = ({ questions }: QuizProps) => {
   const [totalScore, setTotalScore] = useState(0);
   
   const handleNext = () => {
-    if (currentQuestion + 1 > questions.length) {
+    if (currentQuestion + 1 >= questions.length) {
         handleFinish();
         return
     }
