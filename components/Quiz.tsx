@@ -47,7 +47,7 @@ export const Quiz = ({ questions }: QuizProps) => {
         {finished?
             <FinishScreen score={totalScore.toFixed(0)} />
             :
-            <Question question={questions[0]} handleNext={handleNext} numQ={questions.length} score={score} setScore={setScore}/>
+            <Question question={questions[currentQuestion]} handleNext={handleNext} numQ={questions.length} score={score} setScore={setScore}/>
         }
     </div>
   );
@@ -63,6 +63,8 @@ const FinishScreen = ({score}:{score:string}) => {
 
 
 const Question = ({ question, handleNext, numQ, score, setScore }: {question:QuestionType, handleNext:() => void, numQ:number, score:number, setScore:(value: number) => void}) => {
+
+    const [disabled, setDisabled] = useState(true)
     
 
   return (
@@ -71,17 +73,21 @@ const Question = ({ question, handleNext, numQ, score, setScore }: {question:Que
             <h1 className="text-lg sm:text-2xl font-bold">{question.question}</h1>
             <p className="text-lg font-bold">Score: {score}</p>
         </div>
-        <Options options={question.options} answer={question.correctAnswer} explanation={question.explanation} score={score} setScore={setScore}/>
+        <Options options={question.options} answer={question.correctAnswer} explanation={question.explanation} score={score} setScore={setScore} setDisabled={setDisabled}/>
         <div className="flex items-center justify-between w-full">
             <p className="text-lg font-bold">Spørsmål {question.id} / {numQ}</p>
-            <CustomButton text="Neste spm" onClick={handleNext}/>
+            <CustomButton text="Neste spm" onClick={() => {
+                handleNext();
+                setDisabled(true);
+            }} disabled={disabled}/>
+                
         </div>
     </div>
   );
 };
 
-const Options = ({ options, answer, explanation, score, setScore }: 
-    { options: Option[], answer: string, explanation: string, score:number, setScore:(value: number) => void }) => {
+const Options = ({ options, answer, explanation, score, setScore, setDisabled }: 
+    { options: Option[], answer: string, explanation: string, score:number, setScore:(value: number) => void, setDisabled:(value: boolean) => void }) => {
     const [selected, setSelected] = useState<string | undefined>(undefined);
     const [result, setResult] = useState<string | undefined>(undefined);
     const [showExplanation, setShowExplanation] = useState(false);
@@ -92,6 +98,7 @@ const Options = ({ options, answer, explanation, score, setScore }:
             return
         }
         setSelected(answer);
+        setDisabled(false);
     }
 
     const isCorrect = () => {
