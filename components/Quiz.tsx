@@ -107,13 +107,12 @@ const Options = ({ options, answer, explanation, score, setScore, setDisabled }:
   
     useEffect(() => {
         if (selected) {
+            setShowExplanation(true);
             if (isCorrect()) {
                 setResult("Riktig!");
                 setScore(score + 1)
-                setShowExplanation(false); 
                 } else {
                 setResult("Feil!");
-                setShowExplanation(true);
                 }
         }
     }, [selected])
