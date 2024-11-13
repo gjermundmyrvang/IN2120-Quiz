@@ -10,7 +10,7 @@
 #### Disclaimer
 
 Alt innhold i quizen er generert fra Notebook LM og jeg har hatt null medvirkning på spørsmål, svaralternativer og forklaringer. 
-Informasjonen som er generert kan være feil og du må være kritisk.
+Informasjonen som er generert kan være feil og du må være kritisk. Jeg har ikke lagt sjela mi i denne quizen ettersom formålet var å publisere den ila en time eller to. Det kan derfor være bugs i koden eller problemer med layout for ulike skjermer. Sorry not sorry.
 
 - Bruk quizen på eget ansvar
 - Spørsmål og svaralternativer kan være feil
