@@ -68,8 +68,8 @@ const Question = ({ question, handleNext, numQ, score, setScore }: {question:Que
     
 
   return (
-    <div className="w-full flex flex-col items-center space-y-4" key={question.id}>
-        <div className="flex items-center justify-between w-full">
+    <div className="w-full flex flex-col items-center space-y-2 sm:space-y-4" key={question.id}>
+        <div className="flex flex-col md:flex-row space-y-2 items-center justify-between w-full">
             <h1 className="text-lg sm:text-2xl font-bold">{question.question}</h1>
             <p className="text-lg font-bold">Score: {score}</p>
         </div>
@@ -123,19 +123,19 @@ const Options = ({ options, answer, explanation, score, setScore, setDisabled }:
         {result? 
         <h1 className="text-lg font-bold">{result}</h1> : 
         <h1></h1>}
-        <ul className="space-y-4 w-full">
+        <ul className="space-y-2 sm:space-y-4 w-full">
           {options.map((option) => (
             <button
-              className={`p-5 w-full flex items-center border-2 space-x-5 rounded-md hover:cursor-pointer 
+              className={`p-2 sm:p-5 w-full flex items-center border-2 space-x-5 rounded-md hover:cursor-pointer 
                 ${selected && `hover:cursor-not-allowed`}
                 ${option.id === selected ? (isCorrect() ? 'border-green-500' : 'border-red-500') : 'border-purple-500'} 
-                ${option.id === selected ? (isCorrect() ? 'bg-green-100' : 'bg-red-100') : 'bg-white'}`}
+                ${option.id === selected ? (isCorrect() ? 'bg-green-100' : 'bg-red-100') : 'bg-white dark:bg-black-100'}`}
               key={option.id}
               onClick={() => handleSelect(option.id)}
               type="button"
             >
-              <p className="font-extrabold">{option.id})</p>
-              <p>{option.text}</p>
+              <p className="font-extrabold dark:text-white-100">{option.id})</p>
+              <p className="dark:text-white-100">{option.text}</p>
             </button>
           ))}
         </ul>
