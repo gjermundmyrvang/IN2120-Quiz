@@ -1675,5 +1675,1028 @@ export const questions = {
       explanation:
         "Ved å forvrenge offerets oppfatning av plikt og ansvar, kan angriperen få dem til å tro at det er greit å bryte sikkerhetsregler, noe som kan gjøre det lettere å manipulere dem til å utføre handlinger som er skadelige for informasjonssikkerheten.",
     },
+    {
+      id: 91,
+      question:
+        "Hvilket av følgende er et eksempel på et sikkerhetstiltak som støtter konfidensialitet?",
+      options: [
+        { id: "a", text: "Sikkerhetskopiering av data" },
+        { id: "b", text: "Kryptering av data" },
+        { id: "c", text: "Redundante servere" },
+        { id: "d", text: "Brannmur" },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "Kryptering av data sikrer at kun autoriserte personer med riktig nøkkel kan få tilgang til informasjonen, og dermed ivareta konfidensialitet. [1]",
+    },
+    {
+      id: 92,
+      question:
+        "Hva er hovedformålet med å implementere tilgangskontroll i et system?",
+      options: [
+        { id: "a", text: "Å forhindre alle typer systemfeil." },
+        {
+          id: "b",
+          text: "Å begrense tilgangen til systemet til autoriserte brukere.",
+        },
+        { id: "c", text: "Å garantere at systemet alltid er tilgjengelig." },
+        { id: "d", text: "Å sikre at data ikke kan endres eller slettes." },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "Tilgangskontroll begrenser tilgangen til systemet til autoriserte brukere, og forhindrer uautorisert tilgang til sensitiv informasjon og funksjonalitet. [2]",
+    },
+    {
+      id: 93,
+      question:
+        "Hvilket sikkerhetsmål fokuserer på å forhindre uautorisert endring eller sletting av data?",
+      options: [
+        { id: "a", text: "Konfidensialitet" },
+        { id: "b", text: "Integritet" },
+        { id: "c", text: "Tilgjengelighet" },
+        { id: "d", text: "Autentisitet" },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "Integritet som sikkerhetsmål fokuserer på å sikre at data ikke endres eller slettes uten autorisasjon. [3]",
+    },
+    {
+      id: 94,
+      question:
+        "Hvilken type skadevare beskrives som kode innebygd i et legitimt program som aktiveres under bestemte betingelser?",
+      options: [
+        { id: "a", text: "Virus" },
+        { id: "b", text: "Trojansk hest" },
+        { id: "c", text: "Orm" },
+        { id: "d", text: "Logisk bombe" },
+      ],
+      correctAnswer: "d",
+      explanation:
+        "En logisk bombe er en type skadevare som er innebygd i et legitimt program og aktiveres når bestemte betingelser er oppfylt. [4]",
+    },
+    {
+      id: 95,
+      question:
+        "Hva er hensikten med å bruke en kryptoperiode for nøkler i kryptografi?",
+      options: [
+        { id: "a", text: "Å gjøre det vanskeligere å gjette nøkkelen" },
+        {
+          id: "b",
+          text: "Å redusere datamengden som er beskyttet av en nøkkel",
+        },
+        { id: "c", text: "Å øke kompleksiteten til krypteringsalgoritmen" },
+        { id: "d", text: "Å forhindre bruk av svake krypteringsalgoritmer" },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "Kryptoperioden begrenser datamengden som er beskyttet av en gitt nøkkel, og reduserer risikoen for at en kompromittert nøkkel kan brukes til å dekryptere store mengder data. [5]",
+    },
+    {
+      id: 96,
+      question: "Hva er en X.509 sertifikatsti?",
+      options: [
+        {
+          id: "a",
+          text: "En liste over alle sertifikater utstedt av en sertifiseringsinstans.",
+        },
+        {
+          id: "b",
+          text: "Kjeden av sertifikater fra rotsertifikatet til subjektets sertifikat.",
+        },
+        {
+          id: "c",
+          text: "En samling av kryptografiske nøkler brukt til å signere og verifisere sertifikater.",
+        },
+        {
+          id: "d",
+          text: "En protokoll for sikker kommunikasjon mellom nettlesere og webservere.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "En X.509 sertifikatsti er kjeden av sertifikater som starter fra rotsertifikatet og ender med subjektets sertifikat, og brukes til å verifisere autentisiteten til sertifikatet. [6]",
+    },
+    {
+      id: 97,
+      question:
+        "Hvilken type sosial manipulering utnytter folks generelle hjelpsomhet for å få tilgang til sensitiv informasjon?",
+      options: [
+        { id: "a", text: "Phishing" },
+        { id: "b", text: "Pretexting" },
+        { id: "c", text: "Baiting" },
+        { id: "d", text: "Quid pro quo" },
+      ],
+      correctAnswer: "a",
+      explanation:
+        "Phishing-angrep utnytter folks hjelpsomhet ved å lure dem til å gi ut sensitiv informasjon, ofte gjennom falske e-poster eller nettsteder. [7]",
+    },
+    {
+      id: 98,
+      question: "Hva er SQL injection?",
+      options: [
+        { id: "a", text: "En teknikk for å kryptere data i en database." },
+        {
+          id: "b",
+          text: "En type angrep som utnytter sårbarheter i webapplikasjoner for å få tilgang til databaser.",
+        },
+        {
+          id: "c",
+          text: "En metode for å sikkerhetskopiere data i en database.",
+        },
+        {
+          id: "d",
+          text: "En protokoll for sikker kommunikasjon med databaser.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "SQL injection er et angrep som utnytter sårbarheter i webapplikasjoner for å injisere ondsinnet SQL-kode og få tilgang til eller manipulere data i databasen. [8]",
+    },
+    {
+      id: 99,
+      question: "Hva er et leveransekjedeangrep?",
+      options: [
+        {
+          id: "a",
+          text: "Et angrep som retter seg mot transport av fysiske varer.",
+        },
+        {
+          id: "b",
+          text: "Et angrep som utnytter sårbarheter hos en partner eller leverandør for å få tilgang til et målsystem.",
+        },
+        {
+          id: "c",
+          text: "Et angrep som forhindrer levering av tjenester til brukere.",
+        },
+        {
+          id: "d",
+          text: "Et angrep som bruker skadevare til å stjele sensitiv informasjon.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "Et leveransekjedeangrep utnytter sårbarheter i leveransekjeden, for eksempel hos en partner eller leverandør, for å få tilgang til et målsystem. [9]",
+    },
+    {
+      id: 100,
+      question: "Hva er en skjult kanal i informasjonssikkerhet?",
+      options: [
+        {
+          id: "a",
+          text: "En kryptert kommunikasjonskanal som brukes til å skjule dataoverføringer.",
+        },
+        {
+          id: "b",
+          text: "En uautorisert kommunikasjonskanal som brukes til å omgå sikkerhetstiltak.",
+        },
+        {
+          id: "c",
+          text: "En kommunikasjonskanal som ikke er designet for dataoverføring, men som kan misbrukes til å lekke sensitiv informasjon.",
+        },
+        {
+          id: "d",
+          text: "En sikker kommunikasjonskanal som brukes til å beskytte data mot uautorisert tilgang.",
+        },
+      ],
+      correctAnswer: "c",
+      explanation:
+        "En skjult kanal er en kommunikasjonskanal som ikke er ment for dataoverføring, men som kan misbrukes til å lekke sensitiv informasjon uten at det er tilsiktet. [10]",
+    },
+    {
+      id: 101,
+      question:
+        "Hva er hovedforskjellen mellom symmetrisk og asymmetrisk kryptering?",
+      options: [
+        {
+          id: "a",
+          text: "Symmetrisk kryptering bruker samme nøkkel for kryptering og dekryptering, mens asymmetrisk kryptering bruker et nøkkelpar.",
+        },
+        {
+          id: "b",
+          text: "Symmetrisk kryptering er raskere, mens asymmetrisk kryptering er sikrere.",
+        },
+        {
+          id: "c",
+          text: "Symmetrisk kryptering brukes til å beskytte data i ro, mens asymmetrisk kryptering brukes til å beskytte data i bevegelse.",
+        },
+        {
+          id: "d",
+          text: "Symmetrisk kryptering er mer kompleks, mens asymmetrisk kryptering er enklere å implementere.",
+        },
+      ],
+      correctAnswer: "a",
+      explanation:
+        "Den viktigste forskjellen ligger i bruken av nøkler. Symmetrisk kryptering bruker samme nøkkel for både kryptering og dekryptering, mens asymmetrisk kryptering bruker separate nøkler for disse operasjonene. [1]",
+    },
+    {
+      id: 102,
+      question: "Hva er hovedformålet med en hashfunksjon i kryptografi?",
+      options: [
+        {
+          id: "a",
+          text: "Å kryptere data slik at kun autoriserte personer kan lese dem.",
+        },
+        {
+          id: "b",
+          text: "Å generere en unik og fast lengde representasjon av data for å verifisere integritet.",
+        },
+        { id: "c", text: "Å komprimere data for å redusere lagringsbehovet." },
+        { id: "d", text: "Å skjule sensitiv informasjon i en melding." },
+      ],
+      correctAnswer: "b",
+      explanation:
+        'En hashfunksjon lager en unik "fingeravtrykk" av dataene, slik at man kan verifisere at dataene ikke er endret. [2]',
+    },
+    {
+      id: 103,
+      question:
+        "Hvilken type angrep forsøker å tvinge et system til å bruke en svakere krypteringsalgoritme?",
+      options: [
+        { id: "a", text: "Man-in-the-middle-angrep" },
+        { id: "b", text: "Brute-force-angrep" },
+        { id: "c", text: "Downgrade-angrep" },
+        { id: "d", text: "DDoS-angrep" },
+      ],
+      correctAnswer: "c",
+      explanation:
+        "Et downgrade-angrep tvinger kommunikasjon til å bruke en svakere krypteringsalgoritme som er lettere å knekke. [3]",
+    },
+    {
+      id: 104,
+      question: "Hva er hovedformålet med en brannmur i et nettverk?",
+      options: [
+        { id: "a", text: "Å kryptere all nettverkstrafikk." },
+        {
+          id: "b",
+          text: "Å kontrollere og filtrere nettverkstrafikk basert på forhåndsdefinerte regler.",
+        },
+        { id: "c", text: "Å forhindre alle typer nettverksangrep." },
+        { id: "d", text: "Å overvåke og logge all nettverksaktivitet." },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "En brannmur fungerer som en barriere mellom nettverk og filtrerer trafikk basert på regler for å tillate eller blokkere tilgang. [4]",
+    },
+    {
+      id: 105,
+      question: "Hva er et botnett?",
+      options: [
+        {
+          id: "a",
+          text: "Et nettverk av servere som brukes til å lagre og distribuere data.",
+        },
+        {
+          id: "b",
+          text: "En samling av kompromitterte datamaskiner som styres av en angriper.",
+        },
+        {
+          id: "c",
+          text: "Et trådløst nettverk som brukes til å koble til internett.",
+        },
+        {
+          id: "d",
+          text: "Et nettverk av datamaskiner som brukes til å kjøre komplekse beregninger.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        'Et botnett er et nettverk av infiserte datamaskiner, ofte kalt "bots" eller "zombier", som kan kontrolleres av en angriper. [5]',
+    },
+    {
+      id: 106,
+      question: "Hva er hovedformålet med pentesting?",
+      options: [
+        { id: "a", text: "Å utvikle sikker programvare." },
+        {
+          id: "b",
+          text: "Å identifisere og utnytte sårbarheter i et system for å forbedre sikkerheten.",
+        },
+        {
+          id: "c",
+          text: "Å overvåke og logge all systemavtivitet for å oppdage angrep.",
+        },
+        { id: "d", text: "Å installere og konfigurere sikkerhetsprogramvare." },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "Pentesting (penetration testing) simulerer angrep for å avdekke svakheter i et system og gi anbefalinger for å forbedre sikkerheten. [6]",
+    },
+    {
+      id: 107,
+      question:
+        "Hvilket av følgende er et eksempel på et fysisk sikkerhetstiltak?",
+      options: [
+        { id: "a", text: "Brannmur" },
+        { id: "b", text: "Tilgangskontrollsystem" },
+        { id: "c", text: "Overvåkningskamera" },
+        { id: "d", text: "Antivirusprogramvare" },
+      ],
+      correctAnswer: "c",
+      explanation:
+        "Et overvåkningskamera er et fysisk sikkerhetstiltak som brukes til å overvåke og registrere aktivitet i et område. [7]",
+    },
+    {
+      id: 108,
+      question: "Hva er hovedforskjellen mellom autentisering og autorisasjon?",
+      options: [
+        {
+          id: "a",
+          text: "Autentisering verifiserer identiteten til en bruker, mens autorisasjon bestemmer hvilke rettigheter en bruker har.",
+        },
+        {
+          id: "b",
+          text: "Autentisering gir tilgang til et system, mens autorisasjon beskytter data mot uautorisert tilgang.",
+        },
+        {
+          id: "c",
+          text: "Autentisering bruker passord, mens autorisasjon bruker digitale sertifikater.",
+        },
+        {
+          id: "d",
+          text: "Autentisering er et teknisk sikkerhetstiltak, mens autorisasjon er et administrativt sikkerhetstiltak.",
+        },
+      ],
+      correctAnswer: "a",
+      explanation:
+        "Autentisering bekrefter hvem brukeren er, mens autorisasjon definerer hva brukeren har lov til å gjøre i systemet. [8]",
+    },
+    {
+      id: 109,
+      question: "Hva er et buffer overflow-angrep?",
+      options: [
+        {
+          id: "a",
+          text: "Et angrep som overbelaster et system med for mye trafikk.",
+        },
+        {
+          id: "b",
+          text: "Et angrep som utnytter en svakhet i programvare for å skrive data utenfor en tildelt buffer.",
+        },
+        {
+          id: "c",
+          text: "Et angrep som bruker skadevare til å stjele sensitiv informasjon.",
+        },
+        {
+          id: "d",
+          text: "Et angrep som forhindrer tilgang til et system eller en tjeneste.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "Ved et buffer overflow-angrep sendes mer data enn en buffer kan håndtere, noe som kan føre til at ondsinnet kode kjøres. [9]",
+    },
+    {
+      id: 110,
+      question:
+        "Hva er hovedformålet med å implementere et sikkerhetsstyringssystem (ISMS)?",
+      options: [
+        {
+          id: "a",
+          text: "Å eliminere all risiko forbundet med informasjonssikkerhet.",
+        },
+        {
+          id: "b",
+          text: "Å etablere et rammeverk for å styre og forbedre informasjonssikkerheten i en organisasjon.",
+        },
+        { id: "c", text: "Å garantere at alle systemer er 100% sikre." },
+        {
+          id: "d",
+          text: "Å redusere kostnadene forbundet med informasjonssikkerhet.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "Et ISMS gir en strukturert tilnærming til å håndtere og forbedre informasjonssikkerheten. [10]",
+    },
+    {
+      id: 111,
+      question:
+        "Hvilken type risiko er knyttet til muligheten for at en låntaker ikke kan betale tilbake et lån?",
+      options: [
+        { id: "a", text: "Markedsrisiko" },
+        { id: "b", text: "Operasjonell risiko" },
+        { id: "c", text: "Kredittrisiko" },
+        { id: "d", text: "Systemisk risiko" },
+      ],
+      correctAnswer: "c",
+      explanation:
+        "Kredittrisiko er risikoen for tap på grunn av manglende betalingsevne hos en låntaker. [11]",
+    },
+    {
+      id: 112,
+      question: "Hva er hovedformålet med risikohåndtering?",
+      options: [
+        { id: "a", text: "Å identifisere og eliminere alle risikoer." },
+        { id: "b", text: "Å redusere risiko til et akseptabelt nivå." },
+        {
+          id: "c",
+          text: "Å ignorere risikoer som er for vanskelige å håndtere.",
+        },
+        { id: "d", text: "Å overføre all risiko til en tredjepart." },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "Risikohåndtering handler om å identifisere, vurdere og implementere tiltak for å redusere risiko til et nivå som er akseptabelt for organisasjonen. [12]",
+    },
+    {
+      id: 113,
+      question: "Hva er en risikoanalyse?",
+      options: [
+        {
+          id: "a",
+          text: "En prosess for å identifisere og vurdere potensielle trusler og sårbarheter.",
+        },
+        { id: "b", text: "En metode for å implementere sikkerhetstiltak." },
+        { id: "c", text: "En plan for å håndtere sikkerhetshendelser." },
+        {
+          id: "d",
+          text: "En evaluering av effektiviteten av eksisterende sikkerhetstiltak.",
+        },
+      ],
+      correctAnswer: "a",
+      explanation:
+        "Risikoanalyse innebærer å identifisere og analysere potensielle trusler og sårbarheter for å vurdere risiko. [13]",
+    },
+    {
+      id: 114,
+      question: "Hvilken av følgende er en vanlig metode for risikohåndtering?",
+      options: [
+        { id: "a", text: "Risikoreduksjon" },
+        { id: "b", text: "Risikoaksept" },
+        { id: "c", text: "Risikooverføring" },
+        { id: "d", text: "Alle de ovennevnte" },
+      ],
+      correctAnswer: "d",
+      explanation:
+        "Vanlige metoder for risikohåndtering inkluderer risikoreduksjon, risikoaksept og risikooverføring. [12]",
+    },
+    {
+      id: 115,
+      question: "Hva er en sikkerhetshendelse?",
+      options: [
+        {
+          id: "a",
+          text: "Enhver hendelse som kan påvirke sikkerheten til et system.",
+        },
+        { id: "b", text: "Et vellykket angrep på et system." },
+        {
+          id: "c",
+          text: "En mistenkelig aktivitet som kan indikere et angrep.",
+        },
+        {
+          id: "d",
+          text: "En feil i et system som kan utnyttes av en angriper.",
+        },
+      ],
+      correctAnswer: "a",
+      explanation:
+        "En sikkerhetshendelse kan være et faktisk angrep, et forsøk på angrep, eller en annen hendelse som kan true sikkerheten. [13]",
+    },
+    {
+      id: 116,
+      question: "Hva er hovedformålet med en hendelseshåndteringsplan?",
+      options: [
+        { id: "a", text: "Å forhindre alle sikkerhetshendelser." },
+        {
+          id: "b",
+          text: "Å definere prosedyrer for å håndtere sikkerhetshendelser effektivt.",
+        },
+        { id: "c", text: "Å garantere at alle systemer er 100% sikre." },
+        {
+          id: "d",
+          text: "Å redusere kostnadene forbundet med sikkerhetshendelser.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "En hendelseshåndteringsplan gir en strukturert tilnærming til å håndtere sikkerhetshendelser, inkludert identifisering, analyse, inneslutning og gjenoppretting. [14]",
+    },
+    {
+      id: 117,
+      question: "Hva er en sårbarhetsskanner?",
+      options: [
+        {
+          id: "a",
+          text: "En programvare som brukes til å identifisere kjente sårbarheter i et system.",
+        },
+        {
+          id: "b",
+          text: "En enhet som brukes til å beskytte et nettverk mot angrep.",
+        },
+        {
+          id: "c",
+          text: "En metode for å kryptere data for å beskytte dem mot uautorisert tilgang.",
+        },
+        {
+          id: "d",
+          text: "En tjeneste som gir informasjon om nye trusler og sårbarheter.",
+        },
+      ],
+      correctAnswer: "a",
+      explanation:
+        "En sårbarhetsskanner brukes til å søke etter kjente svakheter i systemer og programvare, for eksempel OpenVAS. [15]",
+    },
+    {
+      id: 118,
+      question: "Hva er cyber threat intelligence (CTI)?",
+      options: [
+        { id: "a", text: "Informasjon om potensielle cybertrusler." },
+        { id: "b", text: "En metode for å forhindre cyberangrep." },
+        {
+          id: "c",
+          text: "En programvare som brukes til å beskytte nettverk mot angrep.",
+        },
+        { id: "d", text: "En tjeneste som gir opplæring i cybersikkerhet." },
+      ],
+      correctAnswer: "a",
+      explanation:
+        "Cyber threat intelligence er informasjon om trusler som kan brukes til å forstå og forberede seg på cyberangrep. [16]",
+    },
+    {
+      id: 119,
+      question: "Hva er hovedformålet med sikkerhetsbevissthetstrening?",
+      options: [
+        {
+          id: "a",
+          text: "Å lære ansatte å bruke komplekse sikkerhetssystemer.",
+        },
+        {
+          id: "b",
+          text: "Å øke ansattes forståelse av sikkerhetsrisikoer og -praksis.",
+        },
+        {
+          id: "c",
+          text: "Å eliminere all risiko forbundet med menneskelige feil.",
+        },
+        {
+          id: "d",
+          text: "Å redusere kostnadene forbundet med sikkerhetsopplæring.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "Sikkerhetsbevissthetstrening har som mål å gi ansatte kunnskap og ferdigheter for å ta gode sikkerhetsvalg og redusere risiko. [17]",
+    },
+    {
+      id: 120,
+      question: "Hva er et eksempel på en god praksis for passordsikkerhet?",
+      options: [
+        { id: "a", text: "Bruke samme passord for flere kontoer." },
+        { id: "b", text: "Bruke et enkelt passord som er lett å huske." },
+        { id: "c", text: "Skrive ned passord på en lapp." },
+        { id: "d", text: "Bruke et sterkt og unikt passord for hver konto." },
+      ],
+      correctAnswer: "d",
+      explanation:
+        "Å bruke sterke og unike passord for hver konto reduserer risikoen for at en kompromittert konto kan gi tilgang til andre kontoer. [18]",
+    },
+    {
+      id: 121,
+      question: "Hva er en 'utro tjener' i kontekst av informasjonssikkerhet?",
+      options: [
+        {
+          id: "a",
+          text: "En ansatt som utilsiktet lekker sensitiv informasjon.",
+        },
+        { id: "b", text: "En ekstern hacker som bryter seg inn i et system." },
+        {
+          id: "c",
+          text: "En ansatt som bevisst misbruker sin tilgang til å skade organisasjonen.",
+        },
+        {
+          id: "d",
+          text: "En programvarefeil som gjør systemet sårbart for angrep.",
+        },
+      ],
+      correctAnswer: "c",
+      explanation:
+        "En utro tjener er en person med autorisert tilgang til et system som misbruker denne tilgangen til å forårsake skade. [1]",
+    },
+    {
+      id: 122,
+      question:
+        "Hvilke tiltak kan en organisasjon iverksette for å styrke ansattes integritet og redusere risikoen for innsidetrusler?",
+      options: [
+        {
+          id: "a",
+          text: "Ignorere problemet, da det er usannsynlig at ansatte vil skade organisasjonen.",
+        },
+        {
+          id: "b",
+          text: "Gi alle ansatte tilgang til all informasjon for å fremme tillit.",
+        },
+        {
+          id: "c",
+          text: "Implementere strenge tilgangsbegrensninger og overvåke all ansattaktivitet.",
+        },
+        {
+          id: "d",
+          text: "Gjennomføre bevissthetstrening, tydelige policyer og gi støtte til ansatte i vanskelige situasjoner.",
+        },
+      ],
+      correctAnswer: "d",
+      explanation:
+        "En kombinasjon av bevissthetstrening, tydelige retningslinjer og støtte til ansatte kan bidra til å forhindre innsidetrusler. [2]",
+    },
+    {
+      id: 123,
+      question:
+        "Hvordan bør en organisasjon håndtere ansatte som slutter, for å minimere risikoen for at de tar med seg sensitiv informasjon eller misbruker sin tidligere tilgang?",
+      options: [
+        {
+          id: "a",
+          text: "La de ansatte beholde tilgangen til systemene i en periode etter at de har sluttet.",
+        },
+        {
+          id: "b",
+          text: "Slette all tilgang umiddelbart og eskortere den ansatte ut av bygningen.",
+        },
+        {
+          id: "c",
+          text: "Ha en veldefinert prosess for å avslutte tilgang, gjennomgå avtaler og gi nødvendig oppfølging.",
+        },
+        {
+          id: "d",
+          text: "Tillate ansatte å ta med seg kopier av all informasjon de har jobbet med.",
+        },
+      ],
+      correctAnswer: "c",
+      explanation:
+        "En klar prosess for tilgangsstyring ved oppsigelse er viktig for å sikre informasjonssikkerheten. [3, 4]",
+    },
+    {
+      id: 124,
+      question:
+        "Hva er NLP (Nevro Lingvistisk Programmering) i kontekst av sosial manipulering?",
+      options: [
+        {
+          id: "a",
+          text: "En metode for å forbedre kommunikasjon og forståelse mellom mennesker.",
+        },
+        {
+          id: "b",
+          text: "En teknikk for å manipulere andres tanker og handlinger gjennom språk og kroppsspråk.",
+        },
+        {
+          id: "c",
+          text: "En type programvare som brukes til å analysere og behandle språkdata.",
+        },
+        {
+          id: "d",
+          text: "En form for kunstig intelligens som brukes til å simulere menneskelig samtale.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "I kontekst av sosial manipulering kan NLP brukes til å påvirke offeret gjennom underbevisste signaler. [5]",
+    },
+    {
+      id: 125,
+      question: "Hva er formålet med å bygge tillit i sosial manipulering?",
+      options: [
+        {
+          id: "a",
+          text: "For å skape et genuin og positivt forhold til offeret.",
+        },
+        {
+          id: "b",
+          text: "For å utnytte offerets naturlige hjelpsomhet og tillitsfullhet til å oppnå et mål.",
+        },
+        {
+          id: "c",
+          text: "For å få offeret til å føle seg trygge og komfortable med å dele personlig informasjon.",
+        },
+        {
+          id: "d",
+          text: "For å overbevise offeret om å delta i ulovlige eller uetiske handlinger.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "Angripere bygger ofte tillit for å senke offerets forsvar og gjøre dem mer mottakelige for manipulasjon. [5]",
+    },
+    {
+      id: 126,
+      question: "Hva er 'dobbel uenighet' i sosial manipulering?",
+      options: [
+        {
+          id: "a",
+          text: "Å presentere to motstridende argumenter for å forvirre offeret.",
+        },
+        {
+          id: "b",
+          text: "Å be om to tjenester, for så å trekke tilbake den ene for å øke sjansen for å få ja til den andre.",
+        },
+        {
+          id: "c",
+          text: "Å late som om man er uenig med offeret for å vinne deres tillit.",
+        },
+        {
+          id: "d",
+          text: "Å skape en situasjon der offeret føler seg forpliktet til å gjøre to tjenester.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "Dobbel uenighet er en taktikk som utnytter offerets følelse av forpliktelse. [6]",
+    },
+    {
+      id: 127,
+      question:
+        "Hvordan kan en angriper utnytte 'forpliktelseskryp' i sosial manipulering?",
+      options: [
+        {
+          id: "a",
+          text: "Ved å gradvis øke alvorlighetsgraden av forespørsler til offeret føler seg tvunget til å fortsette.",
+        },
+        {
+          id: "b",
+          text: "Ved å true offeret med negative konsekvenser hvis de ikke oppfyller forespørslene.",
+        },
+        {
+          id: "c",
+          text: "Ved å love offeret belønninger eller fordeler hvis de oppfyller forespørslene.",
+        },
+        {
+          id: "d",
+          text: "Ved å appellere til offerets følelse av lojalitet eller plikt.",
+        },
+      ],
+      correctAnswer: "a",
+      explanation:
+        "Forpliktelseskryp er en gradvis prosess der offeret ledes inn i mer og mer kompromitterende handlinger. [7]",
+    },
+    {
+      id: 128,
+      question:
+        "Hvilken taktikk bruker en angriper som utgir seg for å ha autoritet for å manipulere et offer?",
+      options: [
+        { id: "a", text: "Intimidering" },
+        { id: "b", text: "Smiger" },
+        { id: "c", text: "Gjenytelse" },
+        { id: "d", text: "Autoritet" },
+      ],
+      correctAnswer: "d",
+      explanation:
+        "Ved å fremstå som en autoritetsfigur kan en angriper utnytte offerets tendens til å adlyde ordre. [8]",
+    },
+    {
+      id: 129,
+      question:
+        "Hvilket av følgende er IKKE en del av NSMs fem-trinns modell for å bygge en sikkerhetskultur?",
+      options: [
+        { id: "a", text: "Fundament" },
+        { id: "b", text: "Styring" },
+        { id: "c", text: "Forsterkning" },
+        { id: "d", text: "Deteksjon" },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "NSMs modell består av Fundament, Bevissthet, Forsterket trening, Opprettholdelse og Deteksjon. [9]",
+    },
+    {
+      id: 130,
+      question:
+        "Hva er et av hovedmålene med god sikkerhetsstyring i en organisasjon?",
+      options: [
+        { id: "a", text: "Å eliminere all risiko forbundet med virksomheten." },
+        {
+          id: "b",
+          text: "Å skape en optimal balanse mellom ressursbruk og reduksjon av risiko.",
+        },
+        {
+          id: "c",
+          text: "Å implementere alle tilgjengelige sikkerhetstiltak, uavhengig av kostnad.",
+        },
+        {
+          id: "d",
+          text: "Å fokusere utelukkende på tekniske sikkerhetsløsninger.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "God sikkerhetsstyring handler om å finne en kostnadseffektiv måte å håndtere risiko på. [10]",
+    },
+    {
+      id: 131,
+      question:
+        "Hvilket av følgende er IKKE et kjennetegn på god sikkerhetsstyring i en organisasjon?",
+      options: [
+        { id: "a", text: "Ledelsen er godt informert om sikkerhetsrisikoer." },
+        {
+          id: "b",
+          text: "Sikkerhetstiltak implementeres uten hensyn til kostnader.",
+        },
+        { id: "c", text: "Risikoer prioriteres basert på en grundig analyse." },
+        {
+          id: "d",
+          text: "Roller og ansvarsområder for sikkerhet er tydelig definert.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "Kostnadseffektivitet er en viktig del av god sikkerhetsstyring. [11]",
+    },
+    {
+      id: 132,
+      question: "Hva er formålet med ISO/IEC 27002?",
+      options: [
+        {
+          id: "a",
+          text: "Å definere et sertifiseringsprogram for informasjonssikkerhet.",
+        },
+        {
+          id: "b",
+          text: "Å gi en detaljert beskrivelse av et spesifikt sikkerhetstiltak.",
+        },
+        {
+          id: "c",
+          text: "Å tilby en omfattende samling av sikkerhetstiltak med implementeringsveiledning.",
+        },
+        {
+          id: "d",
+          text: "Å erstatte behovet for risikovurderinger i organisasjoner.",
+        },
+      ],
+      correctAnswer: "c",
+      explanation:
+        "ISO/IEC 27002 er en tiltaksbank som kan brukes til å velge passende sikkerhetstiltak for en organisasjon. [12]",
+    },
+    {
+      id: 133,
+      question:
+        "Hva er en SoA (Statement of Applicability) i forbindelse med ISO/IEC 27001?",
+      options: [
+        {
+          id: "a",
+          text: "En erklæring som bekrefter at organisasjonen har implementert alle tiltak i ISO/IEC 27002.",
+        },
+        {
+          id: "b",
+          text: "En oversikt over hvilke tiltak fra ISO/IEC 27002 som er relevante for organisasjonen og hvorfor.",
+        },
+        {
+          id: "c",
+          text: "En detaljert beskrivelse av organisasjonens sikkerhetspolicyer og prosedyrer.",
+        },
+        {
+          id: "d",
+          text: "En rapport som dokumenterer resultatene av en sikkerhetsrevisjon.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "En SoA er en viktig del av et ISMS basert på ISO/IEC 27001 og viser hvilke tiltak som er implementert. [13]",
+    },
+    {
+      id: 134,
+      question:
+        "Hvilke fire abstrakte temaer kategoriseres sikkerhetstiltakene i ISO/IEC 27002 under?",
+      options: [
+        { id: "a", text: "Styring, Risiko, Overvåking, Respons" },
+        { id: "b", text: "Organisatorisk, Personell, Fysisk, Teknologisk" },
+        {
+          id: "c",
+          text: "Konfidensialitet, Integritet, Tilgjengelighet, Sporbarhet",
+        },
+        {
+          id: "d",
+          text: "Identifisering, Beskyttelse, Deteksjon, Gjenoppretting",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "ISO/IEC 27002 bruker en firedelt kategorisering for å strukturere sikkerhetstiltakene. [13]",
+    },
+    {
+      id: 135,
+      question: "Hva er hovedformålet med NIST Cybersecurity Framework?",
+      options: [
+        {
+          id: "a",
+          text: "Å etablere et obligatorisk sett med sikkerhetsregler for alle amerikanske bedrifter.",
+        },
+        {
+          id: "b",
+          text: "Å gi et rammeverk for å vurdere og forbedre cybersikkerhetspraksis i organisasjoner.",
+        },
+        { id: "c", text: "Å utvikle nye og innovative sikkerhetsteknologier." },
+        {
+          id: "d",
+          text: "Å erstatte behovet for andre sikkerhetsstandarder og rammeverk.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "NIST CSF er et fleksibelt rammeverk som kan tilpasses ulike organisasjoner og bransjer. [14]",
+    },
+    {
+      id: 136,
+      question:
+        "Hvilke seks sikkerhetsfunksjoner inngår i NIST Cybersecurity Framework?",
+      options: [
+        {
+          id: "a",
+          text: "Planlegge, Implementere, Overvåke, Evaluere, Forbedre, Rapportere",
+        },
+        {
+          id: "b",
+          text: "Styre, Identifisere, Beskytte, Detektere, Respondere, Gjenopprette",
+        },
+        {
+          id: "c",
+          text: "Autentisering, Autorisasjon, Regnskapsføring, Revisjon, Ikke-avvisning, Tilgjengelighet",
+        },
+        {
+          id: "d",
+          text: "Trusselmodellering, Risikovurdering, Tiltaksvalg, Implementering, Evaluering, Vedlikehold",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "NIST CSFs seks funksjoner dekker hele spekteret av cybersikkerhetsaktiviteter. [14]",
+    },
+    {
+      id: 137,
+      question:
+        "Hva er hovedforskjellen mellom NIST Cybersecurity Framework og NSMs Grunnprinsipper for IKT-sikkerhet?",
+      options: [
+        {
+          id: "a",
+          text: "NIST CSF er et amerikansk rammeverk, mens NSMs Grunnprinsipper er et norsk rammeverk.",
+        },
+        {
+          id: "b",
+          text: "NIST CSF fokuserer på store organisasjoner, mens NSMs Grunnprinsipper er rettet mot små og mellomstore bedrifter.",
+        },
+        {
+          id: "c",
+          text: "NIST CSF er mer detaljert og omfattende enn NSMs Grunnprinsipper.",
+        },
+        {
+          id: "d",
+          text: "NIST CSF er et kommersielt produkt, mens NSMs Grunnprinsipper er fritt tilgjengelig.",
+        },
+      ],
+      correctAnswer: "a",
+      explanation:
+        "Begge rammeverkene har likheter i struktur og innhold, men er utviklet for ulike nasjonale kontekster. [15]",
+    },
+    {
+      id: 138,
+      question:
+        "Hva menes med 'modenhet' i styring og ledelse av informasjonssikkerhet?",
+      options: [
+        {
+          id: "a",
+          text: "Hvor lenge organisasjonen har hatt et formelt ISMS på plass.",
+        },
+        {
+          id: "b",
+          text: "Hvor effektivt organisasjonen håndterer og reduserer risiko.",
+        },
+        {
+          id: "c",
+          text: "Hvor mye penger organisasjonen bruker på sikkerhetstiltak.",
+        },
+        {
+          id: "d",
+          text: "Hvor mange sertifiseringer organisasjonen har oppnådd innen informasjonssikkerhet.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "Modenhet i informasjonssikkerhet handler om organisasjonens evne til å systematisk styre og forbedre sikkerhetspraksis. [16]",
+    },
+    {
+      id: 139,
+      question:
+        "Hvilken av følgende er den mest modne tilnærmingen til risikostyring i henhold til CMMI-modellen?",
+      options: [
+        { id: "a", text: "Fraværende" },
+        { id: "b", text: "Tilfeldig" },
+        { id: "c", text: "Systematisert" },
+        { id: "d", text: "Formalisert" },
+      ],
+      correctAnswer: "c",
+      explanation:
+        "CMMI-modellen beskriver en stige med økende modenhet, der 'Systematisert' representerer et høyt nivå av risikostyringspraksis. [17]",
+    },
+    {
+      id: 140,
+      question: "Hva er definisjonen på 'risiko' i henhold til ISO 31000?",
+      options: [
+        {
+          id: "a",
+          text: "Sannsynligheten for at en uønsket hendelse skal inntreffe.",
+        },
+        { id: "b", text: "De negative konsekvensene av en uønsket hendelse." },
+        { id: "c", text: "Effekten av usikkerhet på mål." },
+        { id: "d", text: "Enhver trussel mot en organisasjons verdier." },
+      ],
+      correctAnswer: "c",
+      explanation:
+        "ISO 31000 definerer risiko bredt som effekten av usikkerhet på målsettinger. [18]",
+    },
   ],
 };
