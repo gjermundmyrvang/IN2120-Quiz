@@ -1158,5 +1158,522 @@ export const questions = {
       explanation:
         "Risikoer og trusler endrer seg over tid, så det er avgjørende å kontinuerlig vurdere effektiviteten av tiltak. [13]",
     },
+    {
+      id: 71,
+      question:
+        "Hvilken av følgende er IKKE en god praksis for sikkerhetskopiering?",
+      options: [
+        {
+          id: "a",
+          text: "Lag regelmessige sikkerhetskopier av viktige data.",
+        },
+        {
+          id: "b",
+          text: "Oppbevar sikkerhetskopier på samme sted som originaldataene.",
+        },
+        {
+          id: "c",
+          text: "Test sikkerhetskopiene regelmessig for å sikre at de kan gjenopprettes.",
+        },
+        {
+          id: "d",
+          text: "Krypter sikkerhetskopiene for å beskytte sensitive data.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "Sikkerhetskopier bør oppbevares separat fra originaldataene for å beskytte mot tap i tilfelle en hendelse som påvirker det primære lagringsstedet.",
+    },
+    {
+      id: 72,
+      question:
+        "Hva er hensikten med en 'honningkrukke' (honeypot) i et datanettverk?",
+      options: [
+        {
+          id: "a",
+          text: "Å tiltrekke seg angripere og overvåke deres aktiviteter.",
+        },
+        {
+          id: "b",
+          text: "Å lagre sensitive data på en sikker måte.",
+        },
+        {
+          id: "c",
+          text: "Å blokkere uautorisert tilgang til nettverket.",
+        },
+        {
+          id: "d",
+          text: "Å kryptere all nettverkstrafikk.",
+        },
+      ],
+      correctAnswer: "a",
+      explanation:
+        "En honningkrukke er et falskt mål som er designet for å tiltrekke seg angripere. Ved å overvåke aktiviteten på honningkrukken, kan man lære om angripernes taktikker og teknikker.",
+    },
+    {
+      id: 73,
+      question:
+        "Hvilket av følgende er et eksempel på et 'presentasjonsangrep' mot et biometrisk system?",
+      options: [
+        {
+          id: "a",
+          text: "Å bruke et stjålet passord for å få tilgang til et system.",
+        },
+        {
+          id: "b",
+          text: "Å utnytte en sårbarhet i programvaren for å omgå autentisering.",
+        },
+        {
+          id: "c",
+          text: "Å bruke et falskt fingeravtrykk for å lure en fingeravtrykksskanner.",
+        },
+        {
+          id: "d",
+          text: "Å installere skadevare på et system for å stjele data.",
+        },
+      ],
+      correctAnswer: "c",
+      explanation:
+        "Et presentasjonsangrep er et angrep der en angriper prøver å lure et biometrisk system ved å presentere en falsk biometrisk prøve, for eksempel et falskt fingeravtrykk.",
+    },
+    {
+      id: 74,
+      question:
+        "Hvilken av følgende er IKKE et prinsipp for god sikkerhetskultur?",
+      options: [
+        {
+          id: "a",
+          text: "Å skape en atmosfære av åpenhet og tillit.",
+        },
+        {
+          id: "b",
+          text: "Å straffe ansatte hardt for sikkerhetsbrudd.",
+        },
+        {
+          id: "c",
+          text: "Å oppmuntre til rapportering av sikkerhetshendelser.",
+        },
+        {
+          id: "d",
+          text: "Å gi regelmessig sikkerhetsopplæring til ansatte.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "Å straffe ansatte hardt for sikkerhetsbrudd kan føre til at ansatte skjuler hendelser, noe som kan forverre sikkerhetsproblemer. En positiv og støttende tilnærming er mer effektiv for å bygge en god sikkerhetskultur.",
+    },
+    {
+      id: 75,
+      question:
+        "Hva er formålet med en 'SoA' (Statement of Applicability) i henhold til ISO/IEC 27001?",
+      options: [
+        {
+          id: "a",
+          text: "Å dokumentere hvilke sikkerhetstiltak som er implementert i organisasjonen.",
+        },
+        {
+          id: "b",
+          text: "Å beskrive organisasjonens sikkerhetspolicy.",
+        },
+        {
+          id: "c",
+          text: "Å identifisere alle risikoer som organisasjonen er utsatt for.",
+        },
+        {
+          id: "d",
+          text: "Å definere organisasjonens sikkerhetsmål.",
+        },
+      ],
+      correctAnswer: "a",
+      explanation:
+        "En SoA er en erklæring som dokumenterer hvilke sikkerhetstiltak fra ISO/IEC 27002 som er relevante for organisasjonen og om de er implementert.",
+    },
+    {
+      id: 76,
+      question:
+        "Hva er hovedforskjellen mellom 'styring av informasjonssikkerhet' og 'ledelse av informasjonssikkerhet'?",
+      options: [
+        {
+          id: "a",
+          text: "Styring handler om strategiske mål, mens ledelse handler om den daglige driften.",
+        },
+        {
+          id: "b",
+          text: "Styring er et teknisk fagfelt, mens ledelse er et administrativt fagfelt.",
+        },
+        {
+          id: "c",
+          text: "Styring er ansvarlig for å identifisere risikoer, mens ledelse er ansvarlig for å håndtere risikoer.",
+        },
+        {
+          id: "d",
+          text: "Det er ingen forskjell, begrepene brukes om hverandre.",
+        },
+      ],
+      correctAnswer: "a",
+      explanation:
+        "Styring av informasjonssikkerhet handler om å definere strategiske målsettinger, mens ledelse av informasjonssikkerhet handler om å implementere og drifte tiltak for å oppnå disse målene.",
+    },
+    {
+      id: 77,
+      question:
+        "Hvilken av følgende er IKKE et kjennetegn på god sikkerhetsstyring?",
+      options: [
+        {
+          id: "a",
+          text: "Ledelsen er godt informert om sikkerhetsrisikoer.",
+        },
+        {
+          id: "b",
+          text: "Sikkerhetstiltak er implementert uten hensyn til kostnader.",
+        },
+        {
+          id: "c",
+          text: "Roller og ansvarsområder for sikkerhet er tydelig definert.",
+        },
+        {
+          id: "d",
+          text: "Risikoer prioriteres basert på sannsynlighet og konsekvens.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "God sikkerhetsstyring handler om å finne en optimal balanse mellom sikkerhet og kostnader. Det er ikke bærekraftig å implementere alle mulige sikkerhetstiltak.",
+    },
+    {
+      id: 78,
+      question:
+        "Hva er formålet med et ISMS (Information Security Management System)?",
+      options: [
+        {
+          id: "a",
+          text: "Å etablere et sett med regler for bruk av IT-systemer.",
+        },
+        {
+          id: "b",
+          text: "Å gi en oversikt over alle sikkerhetshendelser i organisasjonen.",
+        },
+        {
+          id: "c",
+          text: "Å definere organisasjonens sikkerhetsstrategi.",
+        },
+        {
+          id: "d",
+          text: "Å etablere et system for å styre og forbedre informasjonssikkerheten.",
+        },
+      ],
+      correctAnswer: "d",
+      explanation:
+        "Et ISMS er et system for å styre og forbedre informasjonssikkerheten i en organisasjon. Det definerer prosesser for risikovurdering, risikohåndtering, implementering av sikkerhetstiltak, og evaluering av sikkerhetsarbeidet.",
+    },
+    {
+      id: 79,
+      question: "Hva er hensikten med ISO/IEC 27002?",
+      options: [
+        {
+          id: "a",
+          text: "Å definere et rammeverk for risikostyring.",
+        },
+        {
+          id: "b",
+          text: "Å gi en oversikt over beste praksis for informasjonssikkerhet.",
+        },
+        {
+          id: "c",
+          text: "Å sertifisere organisasjoner for god informasjonssikkerhet.",
+        },
+        {
+          id: "d",
+          text: "Å definere krav til et ISMS.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "ISO/IEC 27002 er en tiltaksbank for informasjonssikkerhet. Den beskriver et bredt spekter av sikkerhetstiltak som organisasjoner kan vurdere å implementere.",
+    },
+    {
+      id: 80,
+      question:
+        "Hvilken av følgende er IKKE et av de fire abstrakte temaene som sikkerhetstiltakene i ISO/IEC 27002 er kategorisert under?",
+      options: [
+        {
+          id: "a",
+          text: "Organisatoriske tiltak",
+        },
+        {
+          id: "b",
+          text: "Personellsikkerhet",
+        },
+        {
+          id: "c",
+          text: "Fysiske tiltak",
+        },
+        {
+          id: "d",
+          text: "Juridiske tiltak",
+        },
+      ],
+      correctAnswer: "d",
+      explanation:
+        "De fire abstrakte temaene i ISO/IEC 27002 er organisatoriske tiltak, personellsikkerhet, fysiske tiltak og teknologiske tiltak.",
+    },
+    {
+      id: 81,
+      question:
+        "Hva er hensikten med attributtene som er knyttet til hvert sikkerhetstiltak i ISO/IEC 27002:2022?",
+      options: [
+        {
+          id: "a",
+          text: "Å gi en detaljert beskrivelse av hvordan tiltaket skal implementeres.",
+        },
+        {
+          id: "b",
+          text: "Å identifisere kostnadene ved å implementere tiltaket.",
+        },
+        {
+          id: "c",
+          text: "Å klassifisere tiltaket i henhold til ulike kategorier og egenskaper.",
+        },
+        {
+          id: "d",
+          text: "Å vurdere effektiviteten av tiltaket.",
+        },
+      ],
+      correctAnswer: "c",
+      explanation:
+        "Attributtene i ISO/IEC 27002:2022 brukes til å klassifisere sikkerhetstiltak i henhold til ulike kategorier, for eksempel om tiltaket er forebyggende, oppdagende eller korrigerende, og hvilke informasjonssikkerhetsegenskaper tiltaket støtter.",
+    },
+    {
+      id: 82,
+      question:
+        "Hvilken av følgende er en viktig forskjell mellom NIST Cybersecurity Framework og NSMs grunnprinsipper for IKT-sikkerhet?",
+      options: [
+        {
+          id: "a",
+          text: "NIST CSF fokuserer på amerikanske myndigheter, mens NSMs grunnprinsipper fokuserer på norske virksomheter.",
+        },
+        {
+          id: "b",
+          text: "NIST CSF er en standard, mens NSMs grunnprinsipper er en veileder.",
+        },
+        {
+          id: "c",
+          text: "NIST CSF definerer et sett med sikkerhetstiltak, mens NSMs grunnprinsipper definerer et sett med sikkerhetsfunksjoner.",
+        },
+        {
+          id: "d",
+          text: "NIST CSF er et rammeverk for risikostyring, mens NSMs grunnprinsipper er et rammeverk for sikkerhetsstyring.",
+        },
+      ],
+      correctAnswer: "a",
+      explanation:
+        "NIST CSF er utviklet for amerikanske myndigheter, men brukes av virksomheter i mange land. NSMs grunnprinsipper er utviklet for norske virksomheter. Begge rammeverkene definerer sikkerhetsfunksjoner og tiltak.",
+    },
+    {
+      id: 83,
+      question:
+        "Hva er hensikten med å kategorisere sikkerhetstiltak etter sikkerhetsfunksjoner?",
+      options: [
+        {
+          id: "a",
+          text: "Å gjøre det enklere å velge de mest kostnadseffektive tiltakene.",
+        },
+        {
+          id: "b",
+          text: "Å gruppere tiltak som støtter samme målsetting for informasjonssikkerhet.",
+        },
+        {
+          id: "c",
+          text: "Å identifisere hvilke tiltak som er mest relevante for en gitt type virksomhet.",
+        },
+        {
+          id: "d",
+          text: "Å vurdere modenheten til organisasjonens sikkerhetsstyring.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "Sikkerhetsfunksjoner representerer ulike målsettinger for informasjonssikkerhet. Ved å kategorisere tiltak etter sikkerhetsfunksjoner, kan man identifisere hvilke tiltak som bidrar til å oppnå de ulike målene.",
+    },
+    {
+      id: 84,
+      question:
+        "Hvilken prioriteringsgruppe i NSMs grunnprinsipper for IKT-sikkerhet bør implementeres først?",
+      options: [
+        {
+          id: "a",
+          text: "Gruppe 1",
+        },
+        {
+          id: "b",
+          text: "Gruppe 2",
+        },
+        {
+          id: "c",
+          text: "Gruppe 3",
+        },
+        {
+          id: "d",
+          text: "Alle gruppene bør implementeres samtidig.",
+        },
+      ],
+      correctAnswer: "a",
+      explanation:
+        "NSM anbefaler å implementere tiltakene i prioriteringsgruppe 1 først, da disse tiltakene anses som mest effektive for å redusere risiko for sikkerhetshendelser.",
+    },
+    {
+      id: 85,
+      question:
+        "Hva er en 'utro tjener' (insider threat) i informasjonssikkerhetssammenheng?",
+      options: [
+        {
+          id: "a",
+          text: "En ekstern angriper som har fått tilgang til organisasjonens systemer.",
+        },
+        {
+          id: "b",
+          text: "En person med autorisert tilgang som misbruker denne tilgangen.",
+        },
+        {
+          id: "c",
+          text: "En sikkerhetshendelse som skyldes en teknisk feil.",
+        },
+        {
+          id: "d",
+          text: "En type skadevare som er designet for å stjele data.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "En utro tjener er en person som har autorisert tilgang til organisasjonens systemer eller data, men som misbruker denne tilgangen til å skade organisasjonen.",
+    },
+    {
+      id: 86,
+      question:
+        "Hvordan kan en organisasjon styrke ansattes integritet og redusere risikoen for innsidetrusler?",
+      options: [
+        {
+          id: "a",
+          text: "Ved å overvåke all ansattes aktivitet nøye.",
+        },
+        {
+          id: "b",
+          text: "Ved å gi regelmessig opplæring om sikkerhetspolicy og etiske retningslinjer.",
+        },
+        {
+          id: "c",
+          text: "Ved å begrense ansattes tilgang til sensitive data til et minimum.",
+        },
+        {
+          id: "d",
+          text: "Ved å installere programvare som overvåker ansattes e-post og nettleseraktivitet.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "Opplæring om sikkerhetspolicy og etiske retningslinjer kan bidra til å øke ansattes bevissthet om sikkerhetsrisikoer og konsekvensene av sikkerhetsbrudd.",
+    },
+    {
+      id: 87,
+      question:
+        "Hva er viktig å gjøre når en ansatt slutter i en organisasjon for å beskytte informasjonssikkerheten?",
+      options: [
+        {
+          id: "a",
+          text: "Å slette alle den tidligere ansattes brukerkontoer og tilganger.",
+        },
+        {
+          id: "b",
+          text: "Å gi den tidligere ansatte en kopi av alle data de har jobbet med.",
+        },
+        {
+          id: "c",
+          text: "Å endre passordene til alle systemer som den tidligere ansatte hadde tilgang til.",
+        },
+        {
+          id: "d",
+          text: "Å be den tidligere ansatte om å signere en taushetserklæring.",
+        },
+      ],
+      correctAnswer: "a",
+      explanation:
+        "Når en ansatt slutter, er det viktig å slette alle deres brukerkontoer og tilganger for å forhindre uautorisert tilgang til organisasjonens systemer og data.",
+    },
+    {
+      id: 88,
+      question: "Hva er 'forpliktelseskryp' i sosial manipulering?",
+      options: [
+        {
+          id: "a",
+          text: "Å true offeret til å utføre handlinger.",
+        },
+        {
+          id: "b",
+          text: "Å utnytte offerets frykt for autoriteter.",
+        },
+        {
+          id: "c",
+          text: "Å få offeret til å utføre en rekke stadig mer alvorlige handlinger.",
+        },
+        {
+          id: "d",
+          text: "Å tilby offeret en belønning for å utføre handlinger.",
+        },
+      ],
+      correctAnswer: "c",
+      explanation:
+        "Forpliktelseskryp er en taktikk der en angriper først får offeret til å utføre en liten, ufarlig handling, og deretter gradvis eskalerer forespørslene til mer alvorlige handlinger.",
+    },
+    {
+      id: 89,
+      question: "Hva er 'gjenytelse' i sosial manipulering?",
+      options: [
+        {
+          id: "a",
+          text: "Å tilby offeret en tjeneste for å få dem til å føle seg forpliktet til å gi noe tilbake.",
+        },
+        {
+          id: "b",
+          text: "Å late som om man er en venn eller kollega for å vinne offerets tillit.",
+        },
+        {
+          id: "c",
+          text: "Å utnytte offerets frykt for å bli straffet.",
+        },
+        {
+          id: "d",
+          text: "Å bruke tekniske midler for å lure offeret.",
+        },
+      ],
+      correctAnswer: "a",
+      explanation:
+        "Gjenytelse er en taktikk der en angriper utnytter det menneskelige instinktet til å ville gjengjelde tjenester. Ved å tilby offeret en tjeneste, kan angriperen få dem til å føle seg forpliktet til å gi noe tilbake, noe som kan utnyttes til å få dem til å utføre handlinger som er skadelige for informasjonssikkerheten.",
+    },
+    {
+      id: 90,
+      question:
+        "Hva er hensikten med å bruke 'fordreining av plikt og ansvar' i sosial manipulering?",
+      options: [
+        {
+          id: "a",
+          text: "Å få offeret til å føle seg ansvarlig for angriperens handlinger.",
+        },
+        {
+          id: "b",
+          text: "Å få offeret til å tro at det er greit å bryte sikkerhetsregler.",
+        },
+        {
+          id: "c",
+          text: "Å få offeret til å frykte konsekvensene av å ikke adlyde angriperen.",
+        },
+        {
+          id: "d",
+          text: "Å få offeret til å tvile på sin egen dømmekraft.",
+        },
+      ],
+      correctAnswer: "b",
+      explanation:
+        "Ved å forvrenge offerets oppfatning av plikt og ansvar, kan angriperen få dem til å tro at det er greit å bryte sikkerhetsregler, noe som kan gjøre det lettere å manipulere dem til å utføre handlinger som er skadelige for informasjonssikkerheten.",
+    },
   ],
 };
