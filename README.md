@@ -1,5 +1,20 @@
 # IN2120 - QUIZ
-Bruk på eget ansvar og ikke ta spørsmål eller svar for gitt. Jeg merget alle forelesnings PDF'er til en stor PDF og ga den til [Notebook LM](https://notebooklm.google/). Det er den som har laget alle spørsmål og svaralternativer. 
+
+#### Velkommen til quiz! 
+
+- Bryn deg på total **140 spørsmål** fra pensum i IN2120
+- Quizen er basert på alle forelesningsslides fra IN2120 høsten 2024
+- Spørsmålene er laget av google sin [Notebook LM](https://notebooklm.google/)
+- Den har også laget alle svaralternativer og forklaringer
+
+#### Disclaimer
+
+Alt innhold i quizen er generert fra Notebook LM og jeg har hatt null medvirkning på spørsmål, svaralternativer og forklaringer. 
+Informasjonen som er generert kan være feil og du må være kritisk.
+
+- Bruk quizen på eget ansvar
+- Spørsmål og svaralternativer kan være feil
+
 
 ## Link til nettside
 [IN2120 Quiz](https://in-2120-quiz.vercel.app/)
